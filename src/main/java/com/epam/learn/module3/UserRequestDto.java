@@ -1,20 +1,16 @@
-package com.epam.learn;
+package com.epam.learn.module3;
 
-public class UserResponseDto {
+public class UserRequestDto {
     private Long id;
     private String name;
     private String surname;
     private String birthday;
 
-    public UserResponseDto(Long id, String name, String surname, String birthday) {
+    public UserRequestDto(Long id, String name, String surname, String birthday) {
         this.id = id;
         this.name = name;
         this.surname = surname;
         this.birthday = birthday;
-    }
-
-    public UserResponseDto() {
-
     }
 
     public Long getId() {
@@ -48,4 +44,6 @@ public class UserResponseDto {
     public void setBirthday(String birthday) {
         this.birthday = birthday;
     }
+
+    // Constructors, getters, and setters
 }

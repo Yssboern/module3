@@ -1,4 +1,4 @@
-package com.epam.learn;
+package com.epam.learn.module3;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

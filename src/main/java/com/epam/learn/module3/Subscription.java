@@ -1,11 +1,19 @@
-package com.epam.learn;
+package com.epam.learn.module3;
 
-
+import javax.persistence.*;
 import java.time.LocalDate;
 
+@Entity
 public class Subscription {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Use an auto-incrementing column
     private Long id;
+
+    @OneToOne
+    @JoinColumn(name = "user_id")
     private User user;
+
     private LocalDate startDate;
 
     public Subscription(Long id, User user, LocalDate startDate) {

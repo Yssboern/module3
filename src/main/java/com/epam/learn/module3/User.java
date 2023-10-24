@@ -1,16 +1,28 @@
-package com.epam.learn;
+package com.epam.learn.module3;
 
-public class UserRequestDto {
+import javax.persistence.*;
+import java.time.LocalDate;
+
+@Entity
+@Table(name = "USERS")
+public class User {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Use an auto-incrementing column
     private Long id;
     private String name;
     private String surname;
-    private String birthday;
+    private LocalDate birthday;
 
-    public UserRequestDto(Long id, String name, String surname, String birthday) {
+    public User(Long id, String name, String surname, LocalDate birthday) {
         this.id = id;
         this.name = name;
         this.surname = surname;
         this.birthday = birthday;
+    }
+
+    public User() {
+
     }
 
     public Long getId() {
@@ -37,13 +49,11 @@ public class UserRequestDto {
         this.surname = surname;
     }
 
-    public String getBirthday() {
+    public LocalDate getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(String birthday) {
+    public void setBirthday(LocalDate birthday) {
         this.birthday = birthday;
     }
-
-    // Constructors, getters, and setters
 }

@@ -1,4 +1,4 @@
-package com.epam.learn;
+package com.epam.learn.module3;
 
 public class SubscriptionResponseDto {
     private Long id;

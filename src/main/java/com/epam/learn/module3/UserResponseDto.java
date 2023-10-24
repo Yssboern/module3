@@ -1,22 +1,19 @@
-package com.epam.learn;
+package com.epam.learn.module3;
 
-
-import java.time.LocalDate;
-
-public class User {
+public class UserResponseDto {
     private Long id;
     private String name;
     private String surname;
-    private LocalDate birthday;
+    private String birthday;
 
-    public User(Long id, String name, String surname, LocalDate birthday) {
+    public UserResponseDto(Long id, String name, String surname, String birthday) {
         this.id = id;
         this.name = name;
         this.surname = surname;
         this.birthday = birthday;
     }
 
-    public User() {
+    public UserResponseDto() {
 
     }
 
@@ -44,11 +41,11 @@ public class User {
         this.surname = surname;
     }
 
-    public LocalDate getBirthday() {
+    public String getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(LocalDate birthday) {
+    public void setBirthday(String birthday) {
         this.birthday = birthday;
     }
 }
