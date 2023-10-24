@@ -2,11 +2,11 @@
 
 
 # What should be done
-- [ ] Create maven project with 4 modules :
-    - [ ] jmp-dto 
-    - [ ] jmp-service-api
-    - [ ] jmp-cloud-service-impl
-    - [ ] jmp-service-rest
+- [x] Create maven project with 4 modules :
+    - [x] jmp-dto 
+    - [x] jmp-service-api
+    - [x] jmp-cloud-service-impl
+    - [x] jmp-service-rest
 
   
 - [ ] Create the fallowing classes under jmp-dto module :
